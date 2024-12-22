@@ -1,0 +1,196 @@
+
+/* Основні стилі для великих екранів (ноутбук) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Адаптація для телефонів (екрани до 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Зменшуємо шрифт */
+    }
+
+    .container {
+        flex-direction: column; /* Елементи йдуть один під одним */
+        align-items: center; /* Центруємо елементи */
+    }
+
+    .header {
+        font-size: 18px; /* Зменшуємо заголовок */
+        text-align: center;
+    }
+
+    .menu {
+        display: none; /* Ховаємо велике меню, якщо воно не адаптивне */
+    }
+
+    .mobile-menu {
+        display: block; /* Відображаємо мобільне меню */
+    }
+}
+.back-arrow {
+    position: absolute;
+    top: 5px; /* Відстань зверху */
+    left: 20px; /* Відстань зліва */
+    font-size: 60px; /* Розмір шрифту для стрілки */
+    font-weight: bold; /* Товщина шрифту */
+    color: #5bc0de; /* Колір стрілки */
+    text-decoration: none; /* Без підкреслення */
+}
+
+.back-arrow:hover {
+    color: #39b3d7; /* Трохи темніший відтінок при наведенні */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #69a7f828;
+    margin: 0;
+    padding: 0;
+}
+
+#imageCanvas {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    cursor: crosshair;
+}
+
+.controls {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button, input[type="color"], input[type="number"] {
+    cursor: pointer;
+}
+
+#textInput {
+    position: absolute;
+    display: none;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    background: transparent; /* Прибирає фон */
+    color: inherit; /* Використовує обраний колір */
+}
+
+
+
+
+/* Позиціювання зображення в лівому нижньому куті */
+.image-container {
+    position: fixed;
+    bottom: -4px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.corner-image {
+    width: 300px;  /* Ви можете змінити розмір зображення */
+    height: auto;
+}
+
+
+/* Стиль для кнопки вибору файлу */
+.file-label {
+    position: absolute;
+    top: 30%; /* Вертикальне вирівнювання по центру */
+    left: 180px; /* Горизонтальне вирівнювання по центру */
+    transform: translate(-50%, -50%); /* Трансформація для точного центрування */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #03abda;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.file-label:hover {
+    background-color: #0496c7;
+}
+
+button, input[type="color"], input[type="number"] {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+
+.controls {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.corner-image {
+    position: fixed;
+    top: 400px; /* Встановіть відповідно до вашого дизайну */
+    right: 1060px;
+    width: 300px; /* Адаптуйте розмір */
+    height: auto;
+}
+
+
+
+/* Стилі для шрифтів, щоб вони не виходили за межі */
+#textInput {
+    position: absolute;
+    display: none;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    background: transparent;
+    color: inherit;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #03abda;
+    border-radius: 5px;
+    background-color: #03abda;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s; /* Лише зміна кольору фону */
+}
+
+button:hover {
+    background-color: #0496c7; /* Темніший відтінок при наведенні */
+}
+
+
+#imageCanvas {
+    border: 2px solid #1397b8a1;
+    cursor: crosshair;
+    display: block;
+    margin-top: 10px; /* Встановлюємо відстань від верхнього краю */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto; /* Автоматична висота для збереження пропорцій */
+}
+

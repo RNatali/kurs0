@@ -1,0 +1,148 @@
+/* Основні стилі для великих екранів (ноутбук) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Адаптація для телефонів (екрани до 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Зменшуємо шрифт */
+    }
+
+    .container {
+        flex-direction: column; /* Елементи йдуть один під одним */
+        align-items: center; /* Центруємо елементи */
+    }
+
+    .header {
+        font-size: 18px; /* Зменшуємо заголовок */
+        text-align: center;
+    }
+
+    .menu {
+        display: none; /* Ховаємо велике меню, якщо воно не адаптивне */
+    }
+
+    .mobile-menu {
+        display: block; /* Відображаємо мобільне меню */
+    }
+}
+
+body {
+    background-color: #69a7f828; /* Замініть на потрібний колір */
+}
+
+/* стрілка */
+.back-arrow {
+    position: absolute;
+    top: 0px; /* Відстань зверху */
+    left: 20px; /* Відстань зліва */
+    font-size: 60px; /* Розмір шрифту для стрілки */
+    font-weight: bold; /* Товщина шрифту */
+    color: #5bc0de; /* Колір стрілки */
+    text-decoration: none; /* Без підкреслення */
+}
+
+.back-arrow:hover {
+    color: #39b3d7; /* Трохи темніший відтінок при наведенні */
+}
+
+
+
+#image {
+    max-width: 100%;
+    max-height: 400px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Стилі для контейнера обрізки */
+.crop-container {
+    border: 2px solid #1397b8a1; /* Рамка навколо контейнера */
+    width: 500px; /* Ширина контейнера */
+    height: 400px; /* Висота контейнера */
+    overflow: hidden; /* Обрізання вмісту */
+    margin: 20px auto; /* Вирівнювання по центру */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додає тінь */
+}
+
+
+/* Стилі для input[type="file"] */
+input[type="file"] {
+    display: none; /* Сховати стандартний input */
+}
+
+
+
+
+/* Стилі для кнопок */
+button {
+    display: block; /* Блочний елемент */
+    width: 250px; /* Ширина кнопки */
+    padding: 15px; /* Внутрішні відступи кнопки */
+    margin: 20px auto; /* Центруємо кнопку */
+    border: none; /* Сховати рамку */
+    color: white; /* Білий текст */
+    cursor: pointer; /* Курсор при наведенні */
+    font-size: 16px; /* Розмір шрифту */
+    border-radius: 5px; /* Закруглені кути */
+    transition: background-color 0.3s; /* Плавний перехід кольору фону */
+}
+/* Стиль для label */
+label {
+    display: inline-block;
+    padding: 15px; /* Внутрішні відступи кнопки */
+    background-color: #03abda;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 70px;
+    position: absolute;
+    left: 20px; /* Відстань зліва */
+
+}
+
+label:hover {
+    background-color: #0496c7; /* Темніший синій при наведенні */
+}
+
+#cropButton {
+    background-color: #03abda; /* Синій фон для кнопки обрізання */
+}
+#cropButton:hover {
+    background-color: #0496c7; /* Темніший синій при наведенні */
+}
+#downloadButton {
+    display: none; /* Сховати кнопку завантаження за замовчуванням */
+    background-color: #03abda; /* Зелений фон для кнопки завантаження */
+}
+#downloadButton:hover {
+    background-color: #0496c7; /* Темніший зелений при наведенні */
+}
+#inputImage {
+    display: none;
+}
+
+
+
+
+
+
+/* Позиціювання зображення в лівому нижньому куті */
+.image-container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.corner-image {
+    width: 300px;  /* Ви можете змінити розмір зображення */
+    height: auto;
+}

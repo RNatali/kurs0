@@ -1,0 +1,181 @@
+/* Основні стилі для великих екранів (ноутбук) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Адаптація для телефонів (екрани до 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Зменшуємо шрифт */
+    }
+
+    .container {
+        flex-direction: column; /* Елементи йдуть один під одним */
+        align-items: center; /* Центруємо елементи */
+    }
+
+    .header {
+        font-size: 18px; /* Зменшуємо заголовок */
+        text-align: center;
+    }
+
+    .menu {
+        display: none; /* Ховаємо велике меню, якщо воно не адаптивне */
+    }
+
+    .mobile-menu {
+        display: block; /* Відображаємо мобільне меню */
+    }
+}
+
+body {
+    background-color: #69a7f828; /* Замініть на потрібний колір */
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; /* Відстань між логотипом та квіткою */
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 500px; /* Збільшений розмір тільки для логотипу */
+    height: auto;
+    border-radius: 10px;
+    margin-left: -150px; /* Відступ зліва */
+
+}
+
+h1 {
+    font-size: 45px;
+    color: #000000ea;
+    margin-bottom: 20px;
+    text-align: left; /* Вирівнювання тексту вліво */
+    margin-left: 50px; /* Відступ зліва */
+    margin-top: -150px; /* Підйом тексту вгору */
+    font-family: 'Roboto', sans-serif; /* Шрифт з Google Fonts */
+}
+
+h2 {
+    font-size: 45px;
+    color:#000000ea;
+    margin-bottom: 20px;
+    text-align: left; /* Вирівнювання тексту вліво */
+    margin-left: 50px; /* Відступ зліва */
+    margin-top: -20px; /* Підйом тексту вгору */
+    font-family: 'Roboto', sans-serif; /* Шрифт з Google Fonts */
+}
+
+.editor-options {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    margin-top: 50px;
+}
+
+.button {
+    background-color: #05a7c4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: #008FC7;
+}
+
+
+
+
+/*для меню*/
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Розташування елементів справа */
+    background-color: #ffffff;
+    padding: 5px 10px; /* Зменшуємо відступи, щоб лінія була ближче до верху */
+    border-bottom: 2px solid #4ca4f752;
+    margin: 0; /* Прибираємо додаткові відступи */
+    position: fixed; /* Фіксована позиція, щоб меню залишалося зверху при прокручуванні */
+    top: 0; /* Меню буде прикріплене до верхньої частини екрану */
+    left: 0;
+    width: 100%; /* Меню займає всю ширину */
+    z-index: 1000; /* Для того, щоб меню залишалося зверху */
+}
+.menu-button {
+    font-size: 15px;
+    color: rgb(79, 78, 82);
+    background-color: #4ca4f700;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+
+
+/* Модальні вікна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #fcfeff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 210px; /* Розташування від верхнього краю білого віконця */
+    right: 525px; /* Розташування від правого краю білого віконця */
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #706a6a; /* Зміна кольору при наведенні */
+}
+
+.menu-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 960px; /* Відступ між текстом та кнопками */
+    color: #1bbcd8;
+    font-family: 'Roboto', sans-serif; /* Шрифт з Google Fonts */
+    margin-top: 10px;
+
+}

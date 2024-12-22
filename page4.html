@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+s
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page41.css"> <!-- Підключення CSS -->
+</head>
+<body>
+    <a class="back-arrow" href="page0.html">←</a> 
+
+    <!-- Зміна тексту кнопки -->
+    <label for="imageLoader" class="file-label">Вибрати зображення</label>
+    <input type="file" id="imageLoader" accept="image/*" style="display:none;" />
+
+    <canvas id="imageCanvas" width="600" height="400"></canvas>
+    
+    <div class="controls">
+        <label for="textColor">Колір:</label>
+        <input type="color" id="textColor" value="#000000">
+        
+        <label for="textSize">Розмір:</label>
+        <input type="number" id="textSize" value="30" min="10" max="100">
+    </div>
+
+    <button onclick="saveText()">Зберегти текст</button>
+    <button onclick="removeLastText()">Видалити попередній текст</button>
+    <button onclick="downloadImage()">Зберегти зображення</button>
+    
+    <div class="image-container">
+        <img src="c:\Users\user\Desktop\Курсова\Фото для макету\Screenshot_4-removebg-preview.png" alt="Arrow Design" class="corner-image">
+    </div>
+    
+    <script src="page42.js"></script> 
+</body>
+</html>

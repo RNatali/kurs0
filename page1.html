@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обрізання Фото</title>
+    <link rel="stylesheet" href="page11.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css"> <!-- Додаємо CSS для Cropper.js -->
+</head>
+<body>
+    
+    <a class="back-arrow" href="javascript:void(0);" onclick="window.history.back()">←</a> <!-- Кнопка повернення у вигляді стрілки -->
+
+    <input type="file" id="inputImage" accept="image/*">
+    <label for="inputImage">Вибрати зображення</label>
+
+    <button id="downloadButton">Завантажити</button>
+    <div class="crop-container">
+        <img id="image" src="" alt="">
+ 
+    </div>
+    <button id="cropButton">Обрізати</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script> <!-- Додаємо JavaScript для Cropper.js -->
+    <script src="page12.js"></script>
+
+<div class="image-container">
+    <img src="c:\Users\user\Desktop\Курсова\Фото для макету\Screenshot_2-removebg-preview (1).png" alt="Arrow Design" class="corner-image">
+</div>
+</body>
+</html>

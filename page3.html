@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page31.css">
+    <title>Редактор зображень</title>
+</head>
+<body>
+    <!-- Кнопка повернення на page0 -->
+    <a class="back-arrow" href="page0.html">←</a> <!-- Замість 'page0.html' вкажіть актуальний шлях до вашої сторінки -->
+
+    <label for="imageLoader" class="custom-file-upload">
+        Вибрати зображення
+    </label>
+    
+    <input type="file" id="imageLoader" name="imageLoader" style="display: none;"/> <!-- Прихований елемент для завантаження файлу -->
+
+    <div class="container">
+        <div class="controls">
+            <label for="colorPicker">Колір:</label>
+            <input type="color" id="colorPicker" value="#000000"/>
+    
+            <label for="penSize">Розмір пера:</label>
+            <input type="range" id="penSize" min="1" max="10" value="3"/>
+    
+            <div class="button-container">
+                <button id="drawMode" class="blue-button">Малювати</button>
+                <button id="eraseMode" class="blue-button">Стирати</button>
+                <button id="clearCanvas" class="blue-button">Очистити</button>
+                <button id="download" class="blue-button">Завантажити</button>
+            </div>
+        </div>
+    
+        <canvas id="canvas" width="500" height="500"></canvas> <!-- Полотно для малювання -->
+    </div>
+
+    <!-- Модальне вікно вибору фігури -->
+    
+    <div class="image-container">
+        <img src="c:\Users\user\Desktop\Курсова\Фото для макету\Screenshot_1-removebg-preview (3).png" alt="Arrow Design" class="corner-image">
+    </div>
+    
+
+    <script src="page32.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+/* Основні стилі для великих екранів (ноутбук) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Адаптація для телефонів (екрани до 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Зменшуємо шрифт */
+    }
+
+    .container {
+        flex-direction: column; /* Елементи йдуть один під одним */
+        align-items: center; /* Центруємо елементи */
+    }
+
+    .header {
+        font-size: 18px; /* Зменшуємо заголовок */
+        text-align: center;
+    }
+
+    .menu {
+        display: none; /* Ховаємо велике меню, якщо воно не адаптивне */
+    }
+
+    .mobile-menu {
+        display: block; /* Відображаємо мобільне меню */
+    }
+}
+/* Стиль для стрілки повернення */
+.back-arrow {
+    position: absolute;
+    top: 5px; /* Відстань зверху */
+    left: 20px; /* Відстань зліва */
+    font-size: 60px; /* Розмір шрифту для стрілки */
+    font-weight: bold; /* Товщина шрифту */
+    color: #5bc0de; /* Колір стрілки */
+    text-decoration: none; /* Без підкреслення */
+}
+
+.back-arrow:hover {
+    color: #39b3d7; /* Трохи темніший відтінок при наведенні */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex; /* Використовуємо flex для вирівнювання контейнерів */
+    justify-content: space-between; /* Пробіл між кнопками і полотном */
+    background-color: #69a7f828;
+
+}
+
+.container {
+    display: flex;
+    width: 100%; /* Займає всю ширину */
+    
+}
+
+.controls {
+    margin: 20px;
+    text-align: left; /* Вирівнюємо текст вліво */
+    width: 200px; /* Ширина блоку з кнопками */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Розміщує кнопки в стовпчик */
+}
+
+
+
+.blue-button {
+    background-color: #03abda; /* Голубий колір */
+    color: white; /* Білий текст */
+    border: none; /* Без рамки */
+    padding: 8px; /* Зменшені внутрішні відступи */
+    margin: 5px; /* Відступи між кнопками */
+    cursor: pointer; /* Курсор у вигляді руки */
+    border-radius: 4px; /* Закруглені кути */
+    transition: background-color 0.3s; /* Анімація зміни кольору */
+    width: 100%; /* Ширина кнопок заповнює контейнер */
+    margin-left: 90px;
+    
+}
+
+.blue-button:hover {
+    background-color: #0496c7; /* Темніший голубий при наведенні */
+}
+
+#canvas {
+    border: 2px solid #1397b8a1; /* Рамка навколо контейнера */
+    width: 500px; /* Ширина контейнера */
+    height: 500px; /* Висота контейнера */
+    overflow: hidden; /* Обрізання вмісту */
+    margin: 20px auto; /* Вирівнювання по центру */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додає тінь */
+    margin-left: 170px;
+
+}
+
+/* Стиль для нашої кастомної кнопки */
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.custom-file-upload:hover {
+    background-color: #ddd;
+}
+
+/* Модальне вікно */
+.modal {
+    display: none; /* Приховано за замовчуванням */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Напівпрозоре тло */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.shape-option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.shape-option:hover {
+    background-color: #ddd;
+}
+
+
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 200px;
+    width: 200px; /* Встановлюємо ширину */
+    background-color: #03abda; /* Голубий колір */
+    color: white; /* Білий текст */
+    text-align: center; /* Центруємо текст */
+    margin-left: 20px;
+    margin-bottom: 300px; /* Відстань знизу */
+    padding: 13px 12px; /* Залишаємо внутрішні відступи */
+ 
+
+}
+
+
+.custom-file-upload:hover {
+    background-color: #0496c7; /* Темніший голубий при наведенні */
+}
+
+.corner-image {
+    width: 200px;  /* Розмір зображення */
+    height: auto;  /* Автоматична пропорція */
+    position: fixed; /* Фіксує елемент відносно вікна */
+    bottom: 0px;    /* Опускає зображення до нижнього краю */
+    right: 0px;      /* Вирівнює по лівому краю */
+    z-index: 1000;  /* Забезпечує, щоб зображення було поверх інших елементів */
+    pointer-events: none;  /* Зображення не взаємодіє з користувачем */
+    user-select: none;  /* Забороняє виділення зображення */
+}

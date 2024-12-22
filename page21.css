@@ -1,0 +1,135 @@
+
+/* Основні стилі для великих екранів (ноутбук) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Адаптація для телефонів (екрани до 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Зменшуємо шрифт */
+    }
+
+    .container {
+        flex-direction: column; /* Елементи йдуть один під одним */
+        align-items: center; /* Центруємо елементи */
+    }
+
+    .header {
+        font-size: 18px; /* Зменшуємо заголовок */
+        text-align: center;
+    }
+
+    .menu {
+        display: none; /* Ховаємо велике меню, якщо воно не адаптивне */
+    }
+
+    .mobile-menu {
+        display: block; /* Відображаємо мобільне меню */
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #69a7f828;
+    position: relative;
+    top: 20px;
+
+}
+
+.back-arrow {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 60px;
+    font-weight: bold; /* Для товщини іконки */
+    color: #03abda;
+    text-decoration: none;
+}
+
+
+.back-arrow:hover {
+    color: #008FC7; /* Трохи темніший відтінок при наведенні */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+img { /* стр.*/
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    max-width: 500px; /* Максимальна ширина зображення */
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #03abda;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0496c7;
+}
+
+
+
+/* Позиціювання зображення в лівому нижньому куті */
+.image-container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.corner-image {
+    width: 300px;  /* Ви можете змінити розмір зображення */
+    height: auto;
+}
+
+
+.image-containere {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 1050px;
+    z-index: 1000;
+}
+.corner-imagee {
+    width: 300px;  /* Ви можете змінити розмір зображення */
+    height: auto;
+}
+
+
+/* Стилі для анімації */
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-500px); /* Змінюйте відстань за потребою */
+    }
+}
+
+button.moved {
+    animation: moveLeft 0.5s forwards; /* Анімація на 0.5 секунд */
+    position: absolute; /* Закріпити кнопку в новому місці */
+    left: 50%; /* Встановити відстань від лівого краю */
+    transform: translateX(-50%); /* Центрування кнопки по горизонталі */
+    top: 260px; /* Задайте висоту, де вона буде знаходитися після переміщення */
+}
+

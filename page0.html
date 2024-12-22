@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="c:\Users\user\Desktop\Курсова\Фото для макету\Image Pasted 2024-19-10 at 20.09.13.png">  <!-- Для формату PNG -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фоторедактор онлайн</title>
+    <link rel="stylesheet" href="page01.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <span class="menu-title">EditEase</span> <!-- Додаємо напис зліва -->
+
+            <button class="menu-button" onclick="showModal('contacts')">Контакти</button>
+            <button class="menu-button" onclick="showModal('about')">Про нас</button>
+        </div>
+        <div class="logo-section">
+            <img src="c:\Users\user\Desktop\Курсова\Фото для макету\Screenshot_1-fotor-bg-remover-20241025185746.png" alt="Лого" class="logo">
+            <img src="c:\Users\user\Desktop\Курсова\Фото для макету\Screenshot_1-removebg-preview (2).png" alt="Квітка" class="flower">
+        </div>
+        <h1>Безкоштовний</h1>
+        <h2>фоторедактор онлайн</h2>
+        <div class="editor-options">
+            <a href="page1.html"><button class="button">Обрізати зображення</button></a>
+            <a href="page2.html"><button class="button">Додати ефект</button></a>
+            <a href="page3.html"><button class="button">Олівець</button></a>
+            <a href="page4.html"><button class="button">Додати текст</button></a>
+        </div>
+
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-button" onclick="hideModal()">&times;</span> <!-- Хрестик для закриття -->
+                <div id="modal-text"></div>
+            </div>
+        </div>
+        
+    </header>
+    
+
+    <script src="page02.js"></script> 
+    
+
+    
+</body>
+</html>
